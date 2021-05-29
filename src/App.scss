@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.renderedContainer {
+  display: grid;
+  grid: repeat(12, 1fr)/repeat(14, 1fr);
+  height: 100vh;
+  width: 100vw;
+  background: grey;
+
+}
+
+
+.navBarContainer {
+  grid-area: 1/1/13/3;
+  background-color: #a0c0ce;
+  border-right: 1px solid #265479;
+  display: grid;
+  grid: repeat(12, 1fr)/1fr;
+}
+
+.Profile{
+  grid-area: 1/1/4/3;
+  // background: blue;
+}
+
+.Signout{
+  grid-area: 12/1/13/1;
+  background: red;
+}
+
+.Header {
+  grid-area: 1/3/3/15;
+  // background: blue;
+  border-bottom: 1px solid black;
+}
+
+.Dashboard {
+  grid-area: 3 / 3/ 13 / 15;
+  // background: red;
+  display: grid; 
+  grid: 
+  repeat(12, 1fr)/repeat(12, 1fr);
+}
+
+.Individual {
+ border: 1px solid blue;
+//  background: blue;
+ grid-area: 1/1/7/7;
+ text-align: center;
+ 
+ 
+}
+
+.Blurb {
+  border: 1px solid blue;
+  grid-area: 1/7/7/13;
+
+}
+
+.Entire {
+  border: 1px solid blue;
+  grid-area: 7/1/13/7;
+
+}
+
+.Tree {
+  border: 1px solid blue;
+  grid-area: 7/7/13/13;
+}
+
